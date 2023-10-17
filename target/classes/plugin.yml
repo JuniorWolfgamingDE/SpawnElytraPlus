@@ -1,0 +1,4 @@
+name: SpawnElytra
+version: '1.0'
+main: de.justin.spawnelytra.SpawnElytra
+api-version: '1.20'

@@ -1,0 +1,10 @@
+#The Location of your Spawn
+spawnx: 0
+spawny: 100
+spawnz: 0
+#The Radius this SpawnElytra will be effective
+radius: 50
+#The World it will be effective
+world: 'world'
+#If the y coord will be ignored when checking if the player is in the spawn radius
+ignoreYLevel: false
