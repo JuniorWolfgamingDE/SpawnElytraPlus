@@ -15,6 +15,7 @@ public class ItemSwapListener implements Listener {
     @EventHandler
     public void onEvent(PlayerSwapHandItemsEvent event) {
         if (isRadiusSpawn(SpawnElytra.radius, event.getPlayer().getLocation(),SpawnElytra.world, SpawnElytra.ignoreYLevel) && !fly.contains(event.getPlayer())) {
+            event.setCancelled(true); // This fix is a oneliner!
             event.getPlayer().setVelocity(event.getPlayer().getLocation().getDirection().setY(100));
             event.getPlayer().setGliding(true);
             fly.add(event.getPlayer());
